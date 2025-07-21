@@ -14,7 +14,7 @@ match operation:
         op_symbol = '*'
     case '/':
         if num2 == 0:
-            print("Error: Division by zero is undefined.")
+            print("Cannot divide by zero.")
             exit()
         result = num1 / num2
         op_symbol = '/'
@@ -22,4 +22,4 @@ match operation:
         print("Invalid operation selected.")
         exit()
 
-print(f"{num1} {op_symbol} {num2} = {result}")
+print(f"The result is {result}.")

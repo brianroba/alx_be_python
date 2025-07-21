@@ -1,5 +1,3 @@
-# daily_reminder.py
-
 def get_priority():
     while True:
         priority = input("Priority (high/medium/low): ").strip().lower()
@@ -19,20 +17,20 @@ def main():
     priority = get_priority()
     time_bound = get_time_bound()
 
+    # Use match case for priority (just for demonstration)
     match priority:
         case "high":
-            reminder = f"'{task}' is a high priority task"
+            pass
         case "medium":
-            reminder = f"'{task}' is a medium priority task"
+            pass
         case "low":
-            reminder = f"'{task}' is a low priority task"
+            pass
 
+    # Print based on time_bound
     if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
+        print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
     else:
-        reminder += ". Consider completing it when you have free time."
-
-    print("\nReminder:", reminder)
+        print(f"Note: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
 
 if __name__ == "__main__":
     main()

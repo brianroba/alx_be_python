@@ -24,4 +24,4 @@ match operation:
         print("Invalid operation selected.")
         return
             
- print(f"{num1} {op_symbol} {num2} = {result}")
+    print(f"{num1} {op_symbol} {num2} = {result}")

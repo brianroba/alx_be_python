@@ -2,9 +2,9 @@ num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 ops = int(input("Choose the operation (+, -, *, /): "))
 #result = {num1}{ops}{num2}
-print(result)
+#print(result)
 
- match operation:
+    match operation:
         case '+':
             result = num1 + num2
             op_symbol = '+'

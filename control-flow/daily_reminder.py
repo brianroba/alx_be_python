@@ -1,4 +1,4 @@
-task = input("Enter your task description: ")
+task = input("Enter a task description: ")
 priority = input("Enter the task priority (high, medium, low): ").lower()
 time_bound = input("Is the task time-bound? (yes or no): ").lower()
 
@@ -17,6 +17,7 @@ if time_bound == "yes":
     reminder += " that requires immediate attention today!"
 else:
     reminder += " — no immediate rush."
+
 
 # Optional: Repeat the reminder 3 times to demonstrate loop usage
 for _ in range(3):
